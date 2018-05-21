@@ -1,0 +1,37 @@
+DAO(Data Access Object)
+데이터베이스에 가서 데이터를 조작하거나 조회하는 기능을 가지는 클래스
+
+student_ex 테이블에 접근해서 데이터를 조작하는 클래스
+StudentDao
+
+
+데이터를 전달하기 위해서 객체가 하나 필요
+내가 조회하려고 하는 데이터를 담을 수 있는 데이터와 동일한 구조를 가지는 객체
+ 
+Model
+내가 조회하려고 하는 데이터를 담을 수 있는 데이터와 동일한 구조를 가지는 객체
+VO(Value Object) , DTO(Data Trasfer Object)
+
+sqlplus 명령어 몇가지....
+칼럼길이 조절
+col 칼럼이름 for a10 : 문자길이를 문자열 10개로 표시
+col 칼럼이름for 999999999: 칼럼길이를 뒤쪽 숫자의 길이만큼 표시
+
+set linesize 400;
+set pagesize 1;
+
+PreparedStatement;
+sql을 좀더 쉽게 작성할 수 있게 만들어 놓은
+
+작성하는 SQL 문자열 안에'?'를 이용해서 변수들을 집어넣을 수 있게 한다.
+
+ex) insert into studentvalues (?,?,?);
+'?' 부분이 문자열이면 알아서 ''를 넣어준다.
+
+
+
+
+
+
+
+
